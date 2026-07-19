@@ -814,11 +814,13 @@ main { display: block; }
 }
 
 /* ============ Gradient accent line on section headers ============ */
+/*
 .section__eyebrow {
   position: relative;
   background: var(--accent-soft);
   border: 1px solid var(--accent);
 }
+*/
 .section__eyebrow::before {
   content: '';
   position: absolute;
