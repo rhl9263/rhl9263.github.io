@@ -1,0 +1,49 @@
+---
+import { site } from '../config';
+---
+
+<section id="hero" class="hero">
+  <div class="hero__inner">
+    <p class="hero__eyebrow">{site.role} · {site.years} Years · {site.location}</p>
+    <h1 class="hero__title">
+      <span class="hero__title-line">Hi, I'm</span>
+      <span class="hero__title-name">{site.name}</span>
+    </h1>
+    <p class="hero__lede">
+      Results-driven <strong>Senior SDET</strong> with <em>{site.years} years</em> of experience designing, developing, and implementing comprehensive
+      <strong>test automation frameworks</strong> for web applications, <em>APIs</em>, and <em>cloud-native architectures</em>. Expert in using
+      AI-powered tools and proficient in <em>Playwright</em>, <em>Selenium</em>, <em>Postman</em>, and <em>K6</em>. Currently at
+      <a href={site.currentGig.url} target="_blank" rel="noopener">{site.currentGig.company}</a>.
+    </p>
+
+    <div class="hero__meta">
+      <span class="chip">Playwright</span>
+      <span class="chip">Cypress</span>
+      <span class="chip">Selenium</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">AWS</span>
+      <span class="chip">CI/CD</span>
+    </div>
+
+    <div class="hero__ctas">
+      <a href="#projects" class="btn btn--primary">See projects →</a>
+      <a href="#contact" class="btn btn--ghost">Get in touch</a>
+    </div>
+
+    <div class="hero__socials">
+      <a href={`mailto:${site.urls.email}`} aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+      </a>
+      <a href={site.urls.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href={site.urls.github} target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href={site.urls.resumePdf} target="_blank" rel="noopener" aria-label="Résumé">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

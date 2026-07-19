@@ -1,0 +1,39 @@
+---
+import { quickFacts } from '../config';
+---
+
+<section id="about" class="section animate-on-scroll">
+  <header class="section__header">
+    <span class="section__eyebrow">About</span>
+    <h2 class="section__title">Quality is not an act, it's a habit.</h2>
+  </header>
+
+  <div class="about">
+    <div class="about__body">
+      <p>
+        I'm a <strong>Senior SDET</strong> with 4.6 years of experience designing, developing, and implementing comprehensive
+        <strong>test automation frameworks</strong> for web applications, APIs, and cloud-native architectures.
+        Expert in using <em>AI-powered tools</em> (ChatGPT, Claude, Windsurf) to accelerate test case generation, optimize test scripts,
+        and enhance debugging efficiency.
+      </p>
+      <p>
+        Proficient in <strong>Playwright</strong>, <strong>Selenium</strong>, <strong>Postman</strong>, and <strong>K6</strong> for performance testing.
+        Strong expertise in <em>CI/CD pipelines</em> (Jenkins, GitLab CI), <em>BDD</em> (Cucumber),
+        <em>AWS services</em> (Lambda, S3, Cognito), and <em>database testing</em> (Oracle SQL, PostgreSQL).
+      </p>
+      <p>
+        Demonstrated success in <strong>reducing regression cycles by 40%</strong>, improving test coverage by 35%, and mentoring junior engineers in automation best practices.
+      </p>
+    </div>
+    <aside class="about__aside">
+      <dl class="quick-facts">
+        {quickFacts.map((f) => (
+          <>
+            <dt>{f.label}</dt>
+            <dd>{f.value}</dd>
+          </>
+        ))}
+      </dl>
+    </aside>
+  </div>
+</section>
